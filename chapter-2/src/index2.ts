@@ -58,6 +58,12 @@ sample('Nao');
 //例　受け取った合計値を返す関数
 //1,2,3,9で受け取ったものを配列としてまとめるので楽
 
+
+//...values:number[] リスト型で中身がnumber型の変数values...でリストをバラバラにすろ
+//それがnumber型であることを宣言
+//この状態でvaluesに対してreduceを当ててる
+//reduce(callback)でreduceは隣り合う２つの配列要素に対し左から右にコールバック関数を適用していくメソッド
+//２つめのreturnはコールバック関数の中身をたしている
 function sum(...values: number[]): number {
     return values.reduce(function(prev, current) {
         return prev + current;
@@ -87,9 +93,4 @@ console.log(hello('Nekosan'));
 
 //DOM操作の場合などはアロー関数とfunctionでthisの扱いが違うので注意
 //定義前の関数呼び出しが前後する時はfunction関数
-
-
-
-//Classの理解
-
 

@@ -56,7 +56,10 @@ var add = function (x1, x2) {
 };
 console.log(add(2, 4));
 //add(2,4);  console.log(add);ではない
-var hello = function (name) {
-    return "Hello, " + name + "!";
-};
+//{}とreturn を省略できる　
+//引数が一つかつ　型注釈つけない時()なしok、引数0は()省略出来ない
+var hello = function (name) { return "Hello, " + name + "!"; };
 console.log(hello('Nekosan'));
+//DOM操作の場合などはアロー関数とfunctionでthisの扱いが違うので注意
+//定義前の関数呼び出しが前後する時はfunction関数
+//Classの理解
