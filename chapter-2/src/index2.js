@@ -17,7 +17,7 @@ console.log(a1, b1); // 3 4
 var post2 = {
     id: 1,
     content: 'dummy',
-    created: '2020-02-08'
+    created: '2020-02-08',
 };
 //変数名のrenameができる valueは囲む必要なし
 var id = post2.id, business = post2.content; //dummy→business

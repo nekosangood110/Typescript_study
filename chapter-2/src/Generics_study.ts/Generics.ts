@@ -1,6 +1,9 @@
 //ジェネリック(Generics)  
 //そのクラスを使用するときデータ型を決められる
 
+//Ｉ特定のプロパティの型指定　Ｇ型が変数のイメージ
+
+//ジェネリックを使わない例
 class NumberStore {
     data: number; //strictモードで　=がない時　data: number|undefined
 }
@@ -28,7 +31,7 @@ let booleanData = new Store<boolean>(); //すべてのＴにbooleanが指定さ�
 
 //関数にもデータ型指定できる(引数のデータ型と戻り値)
 //<T>は必ず書く
-function hellosan<T>(keyword: T) {  //(keyword: T): T {で戻り値も
+function hellosan<T>(keyword: T) /*: T　*/ {
     console.log(`Logs: ${keyword}!!!`)
 }
 
@@ -45,3 +48,11 @@ class Component<T,U> {
 
 let com = new Component<number,string>();
 com.id = 10000;  //文字列入れるとエラー
+
+
+
+function nyankosan<T>(id: T):T {
+    return id
+}
+
+nyankosan<number>(4);

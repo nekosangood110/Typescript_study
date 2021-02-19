@@ -17,7 +17,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
             r[k] = a[j];
     return r;
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 // console.log('Hello TypeScript!')
 var a = 1 + 2;
 var b = a + 3; //b=6

@@ -9,8 +9,8 @@ class Animal {
 
   constructor(public isCry: boolean) {
     //   this.isCry = isCry;　Tsはアクセス修飾子(public)があると
-    //プロパティに初期化は必要なし=cunstructorに引数が来ること伝えなくていい
-    //ここでいうthisはAnimal Class
+    //constructorで渡ってくるものに初期化(this)は必要なし
+    //ここでいうthisはAnimal Class //ageはthis.age
   }
 
   cry(): void {
